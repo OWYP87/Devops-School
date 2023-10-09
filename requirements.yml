@@ -1,0 +1,3 @@
+# Requirement file for Ansible Galaxy
+roles:
+  - name: singleplatform-eng.users

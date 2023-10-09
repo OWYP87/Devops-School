@@ -1,0 +1,20 @@
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: ./ansible-work/tasks-1/
+    state: directory
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: ./ansible-work/tasks-2/
+    state: directory
+
+- name: Copy file into servers
+  ansible.builtin.copy:
+    src: files/my_file.txt
+    dest: ./ansible-work/tasks-1/my_file.txt
+
+- name: Copy Template file onto servers
+  ansible.builtin.template:
+    src: templates/template_file.txt.j2
+    dest: ./ansible-work/tasks-2/template_file.txt.j2
+

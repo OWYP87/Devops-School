@@ -1,0 +1,11 @@
+student_initials: 'artur'
+students_initials: ['Artur', 'Janek', 'Organek'] #list just for training, can be ingored/removed
+groups_to_create:
+  - name: developers
+    gid: 10000
+users:
+  - username: foo
+    name: Foo Barrington
+    groups: ['developers']
+    uid: 1001
+

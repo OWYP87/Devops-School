@@ -1,0 +1,4 @@
+- hosts: all 
+  roles:
+    #    - copy_files
+    - singleplatform-eng.users
